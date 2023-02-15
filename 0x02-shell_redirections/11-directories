@@ -1,4 +1,3 @@
 #!/bin/bash
 
-find . -mindepth 1 -type d -printf '%h\n' | sort | uniq | wc -l
-
+find . -mindepth 1 -type d -name ".*" -o -type d -printf "1\n" | wc -l
